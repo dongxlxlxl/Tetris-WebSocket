@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('pull code') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'ba459cb4-c760-4911-aaff-2809f3395f91', url: 'https://github.com/Nevercomes/Tetris-WebSocket.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'ba459cb4-c760-4911-aaff-2809f3395f91', url: 'https://github.com/dongxlxlxl/Tetris-WebSocket.git']]])
             }
         }
         stage('build project') {
